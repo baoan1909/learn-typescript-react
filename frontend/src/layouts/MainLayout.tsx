@@ -6,9 +6,9 @@ export default function MainLayout() {
     return (
         <div className="flex">
             <Sidebar />
-            <div>
+            <div className="flex-1">
                 <Header />
-                <main>
+                <main className="h-screen bg-[#F5F6FA] p-5 rounded-[20px] mr-2">
                     <Outlet />
                 </main>
             </div>
