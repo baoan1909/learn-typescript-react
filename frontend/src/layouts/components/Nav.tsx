@@ -6,6 +6,10 @@ const menus = [
         text: "Dashboard"
     },
     {
+        url: "/categories",
+        text: "Categories"
+    },
+    {
         url: "/products",
         text: "Products"
     },

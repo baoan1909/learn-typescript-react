@@ -1,0 +1,44 @@
+# Dependencies
+node_modules/
+
+# Build outputs (tsconfig.json: rootDir ./src, outDir ./dist)
+dist/
+build/
+*.tsbuildinfo
+
+# Keep environment variables out of version control
+.env
+.env.*
+!.env.example
+
+# Prisma 7 generated client (src/models/schema.prisma -> output "./src/generated/prisma")
+src/generated/
+src/models/src/generated/
+**/generated/prisma/
+.prisma/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Test / coverage
+coverage/
+.nyc_output/
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# OS files
+.DS_Store
+Thumbs.db
