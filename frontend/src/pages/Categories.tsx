@@ -3,9 +3,7 @@ import { Button } from "@/components/ui/button"
 import {
     Table,
     TableBody,
-    TableCaption,
     TableCell,
-    TableFooter,
     TableHead,
     TableHeader,
     TableRow,
@@ -14,7 +12,7 @@ import { instance } from "@/lib/axios";
 import type { Category } from "@/types/category.type";
 import { useQuery } from "@tanstack/react-query";
 const getCategories = async () : Promise<Category[]> => {
-    const response = await instance.get('/categories1');
+    const response = await instance.get('/categories');
     return response.data.data;
 }
 
